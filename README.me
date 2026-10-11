@@ -1,0 +1,38 @@
+# Painel de Doses Aplicadas por Faixa Etária
+
+Este projeto é um dashboard interativo desenvolvido em Python e Streamlit para visualizar dados públicos do DATASUS sobre doses aplicadas por faixa etária.
+
+## Objetivo
+
+Tornar dados públicos de imunização mais acessíveis, organizados e fáceis de explorar.
+
+## Funcionalidades
+
+- Visualização de doses aplicadas por faixa etária
+- Busca por faixa etária
+- Gráfico interativo das faixas com mais doses
+- Participação percentual de cada faixa etária
+- Download dos dados filtrados em CSV
+- Atualização dos dados carregados
+
+## Tecnologias
+
+- Python
+- Streamlit
+- Pandas
+- Plotly
+
+## Como executar localmente
+
+```bash
+pip install -r requirements.txt
+streamlit run app.py
+```
+
+## Dados
+
+Os dados utilizados foram exportados do DATASUS/TabNet.
+
+## Limitação
+
+Este painel apresenta doses aplicadas, não cobertura vacinal. Para calcular cobertura vacinal, seria necessário cruzar as doses aplicadas com a população-alvo de cada faixa etária.
